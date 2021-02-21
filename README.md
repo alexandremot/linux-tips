@@ -5,3 +5,18 @@
 ###### https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost
 
 ----
+#### // mysql
+----
+###### desabilitar desligamento do note quando fechada a tampa
+
+    1. Open the file /etc/systemd/logind.conf as root.
+    2. Find this: HandleLidSwitch
+    3. If it's commented, uncomment and change the value to ignore. The line after editing should be:
+
+    HandleLidSwitch=ignore
+
+    4. Restart computer and your problem should be gone. Or better restart logind service:
+
+    sudo service systemd-logind restart
+
+----
