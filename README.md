@@ -11,6 +11,17 @@
     ssh-keygen -t rsa
 
 ----
+
+###### problema:
+    [user@hostname ~]$ ssh root@pong
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    
+###### solução:   
+    ssh-keygen -R <host>
+
+----
 #### // helpful hints
 ----
 ###### desabilitar desligamento do note quando fechada a tampa
