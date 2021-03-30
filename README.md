@@ -20,6 +20,7 @@
     
 ###### solução:   
     ssh-keygen -R <host>
+      where host: destination machine
 
 ----
 #### // helpful hints
